@@ -24,6 +24,8 @@
               [(ngModel)]="user.username"
               ></ion-input>
           </ion-item>
+        </ion-row>
+        <ion-row>
           <ion-item>
             <!-- <ion-label stacked>Password</ion-label> -->
             <ion-input
@@ -40,13 +42,47 @@
     </span>
     <span *ngIf="submited" >
       <ion-card>
-        <ion-card-header>
-          Bonjour {{ this.user.username }} !
-        </ion-card-header>
+        <ion-item>
+          <ion-avatar item-left>
+            <img src="/img/user.jpg">
+          </ion-avatar>
+          <h2>{{ username }}</h2>
+        </ion-item>
 
-        <ion-card-content>
-          Regardez en dessous ce qui se passe en ce moment prêt de vous !
-        </ion-card-content>
+        <ion-list>
+          <button ion-item>
+            <ion-icon name="flame" item-left></ion-icon>
+            Voir les événements
+          </button>
+
+          <button ion-item>
+            <ion-icon name="apps" item-left></ion-icon>
+            Parcourir les catégories
+          </button>
+
+          <button ion-item  (click)="disconnect()">
+            <ion-icon name="log-out" item-left></ion-icon>
+            Se déconnecter
+          </button>
+
+
+
+          <!-- <button ion-item>
+            <ion-icon name="paw" item-left></ion-icon>
+            Dog Park
+          </button>
+
+          <button ion-item>
+            <ion-icon name="beer" item-left></ion-icon>
+            Pub
+          </button>
+
+          <button ion-item>
+            <ion-icon name="planet" item-left></ion-icon>
+            Space
+          </button> -->
+
+        </ion-list>
       </ion-card>
 
       <button ion-button full [navPush]="page2" (click)="clicked()">Aller voir</button>
