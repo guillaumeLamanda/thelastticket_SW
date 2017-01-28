@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page One</ion-title>
+    <ion-title>Connexion</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,29 +11,41 @@
 
   <!--  List for Auth -->
   <ion-grid>
-    <form (ngSubmit)="login()">
-      <ion-row>
-        <ion-item>
-          <!-- <ion-label stacked>Username</ion-label> -->
-          <ion-input
-            name="username"
-            placeholder="Username"
-            type="text"
-            value=""
-            [(ngModel)]="username" ></ion-input>
-        </ion-item>
-        <ion-item>
-          <!-- <ion-label stacked>Password</ion-label> -->
-          <ion-input
-            name="password"
-            placeholder="Password"
-            type="password"
-            [(ngModel)]="password" ></ion-input>
-        </ion-item>
-      </ion-row>
-      <ion-row>
-        <button ion-button full>Login</button>
-      </ion-row>
-    </form>
+    <span *ngIf="!username">
+      <form (ngSubmit)="login($form)">
+        <ion-row>
+          <ion-item>
+            <!-- <ion-label stacked>Username</ion-label> -->
+            <ion-input
+              name="username"
+              placeholder="Username"
+              type="text"
+              value="" ></ion-input>
+          </ion-item>
+          <ion-item>
+            <!-- <ion-label stacked>Password</ion-label> -->
+            <ion-input
+              name="password"
+              placeholder="Password"
+              type="password" ></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <button ion-button full>Login</button>
+        </ion-row>
+      </form>
+    </span>
+    <span *ngIf="username" >
+      <ion-card>
+        <ion-card-header>
+          Bonjour {{ username }} !
+        </ion-card-header>
+
+        <ion-card-content>
+          Regardez en dessous ce qui se passe en ce moment prêt de vous !
+        </ion-card-content>
+      </ion-card>
+      <button ion-button full [navPush]="page2" (click)="clicked($event)">Aller voir</button>
+    </span>
   </ion-grid>
 </ion-content>
