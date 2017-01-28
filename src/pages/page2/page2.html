@@ -14,22 +14,30 @@
         <ion-col width-100>
           <ion-card ion-item *ngFor="let show of shows" (click)="itemTapped($event, item)">
             <ion-card-content>
-                  <ion-img class="card-thumbnail"  [ngStyle]="{'background-image': 'url(' + show.Image + ')'}"></ion-img>
-                  <ion-card-title>
-                    {{show.Title}}
-                  </ion-card-title>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-      <!-- <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-      {{item.note}}
-    </div>
-  </button>-->
+              <ion-img class="card-thumbnail"  [ngStyle]="{'background-image': 'url(' + show.Image + ')'}"></ion-img>
+              <div class="card-infos">
+              <ion-card-title>
+                {{show.Title}}
+              </ion-card-title>
+              <p class="date">
+                {{show.Date}}
+              </p>
+              <p class="place">
+                {{show.Place}}
+              </p>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+  <ion-icon [name]="item.icon" item-left></ion-icon>
+  {{item.title}}
+  <div class="item-note" item-right>
+  {{item.note}}
+</div>
+</button>-->
 </ion-list>
 <div *ngIf="selectedItem" padding>
   You navigated here from <b>{{selectedItem.title}}</b>
