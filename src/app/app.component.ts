@@ -44,7 +44,7 @@ export class MyApp {
       this.rootPage = Page1;
     } else {
       this.rootPage = Page2;
-      console.log('user  finded : ' + window.localStorage.getItem('username'));
+      console.log('user sdfdf finded : ' + window.localStorage.getItem('username'));
     }
   }
 
