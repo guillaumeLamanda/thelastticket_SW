@@ -23,8 +23,8 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Authentification', component: Page1 },
-      { title: 'Vente', component: Page2 },
+      { title: 'Utilisateur', component: Page1 },
+      { title: 'Evénements', component: Page2 },
       { title: 'PlaceConcert', component: Page3 }
     ];
 
@@ -44,7 +44,7 @@ export class MyApp {
       this.rootPage = Page1;
     } else {
       this.rootPage = Page2;
-      console.log('user finded : ' + window.localStorage.getItem('username'));
+      console.log('user sdfdf finded : ' + window.localStorage.getItem('username'));
     }
   }
 
