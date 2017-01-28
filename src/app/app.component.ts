@@ -37,6 +37,15 @@ export class MyApp {
     });
   }
 
+  checkPreviousAuthorization(): void {
+    if((window.localStorage.getItem('username') === "undefined" || window.localStorage.getItem('username') === null)) {
+      this.rootPage = Page1;
+    } else {
+      this.rootPage = Page2;
+      console.log('user finded : ' + (window.localStorage.getItem('username'));
+    }
+  }
+
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
