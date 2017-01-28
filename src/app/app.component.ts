@@ -12,6 +12,7 @@ import { Page2 } from '../pages/page2/page2';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
+  // Page 1 : authentification
   rootPage: any = Page1;
 
   pages: Array<{title: string, component: any}>;
@@ -21,8 +22,8 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Page One', component: Page1 },
-      { title: 'Page Two', component: Page2 }
+      { title: 'Authentification', component: Page1 },
+      { title: 'Vente', component: Page2 }
     ];
 
   }
