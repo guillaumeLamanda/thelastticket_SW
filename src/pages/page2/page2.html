@@ -11,17 +11,24 @@
   <ion-list>
     <ion-grid>
       <ion-row>
-        <ion-col width-50>
+        <ion-col width-100>
           <ion-card ion-item *ngFor="let show of shows" (click)="itemTapped($event, item)">
-            <img src="img/show1.jpg"/>
             <ion-card-content>
-              <ion-card-title>
-                {{show.Title}}
-              </ion-card-title>
+              <ion-row>
+                <ion-col width-50>
+                  <img src="img/show1.jpg"/>
+                </ion-col>
+                <ion-col width-50>
+                  <ion-card-title>
+                    {{show.Title}}
+                  </ion-card-title>
+                </ion-col>
+              </ion-row>
             </ion-card-content>
-          </ion-card></ion-col>
-        </ion-row>
-      </ion-grid>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
       <!-- <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-left></ion-icon>
       {{item.title}}
