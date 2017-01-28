@@ -17,18 +17,32 @@
               <ion-card-title>
                 {{ticket.Categorie}}
               </ion-card-title>
-              <p class="porte">
+              <div class="flex-container">
+              <div class="flex-item">
                 {{ticket.Porte}}
-              </p>
-              <p class="rang">
+              </div>
+              <div class="flex-item">
                 {{ticket.Rang}}
-              </p>
-              <p class="place">
+              </div>
+              <div class="flex-item">
                 {{ticket.Place}}
+              </div>
+
+            </div>
+            <ion-item>
+
+            <button item-right ion-button color="danger">{{ticket.Prix}} €</button>
+
+            <p class="FauxPrix" item-right> {{ticket.FauxPrix}} </p>
+
+
+          </ion-item>
             </ion-card-content>
           </ion-card>
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-list>
+
+
 </ion-content>
