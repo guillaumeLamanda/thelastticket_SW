@@ -11,7 +11,7 @@
 
   <!--  List for Auth -->
   <ion-grid>
-    <span *ngIf="!username">
+    <span *ngIf="!submited">
       <form (ngSubmit)="login($form)">
         <ion-row>
           <ion-item>
@@ -20,14 +20,17 @@
               name="username"
               placeholder="Username"
               type="text"
-              value="" ></ion-input>
+              value=""
+              [(ngModel)]="user.username"
+              ></ion-input>
           </ion-item>
           <ion-item>
             <!-- <ion-label stacked>Password</ion-label> -->
             <ion-input
               name="password"
               placeholder="Password"
-              type="password" ></ion-input>
+              type="password"
+              [(ngModel)]="user.password"></ion-input>
           </ion-item>
         </ion-row>
         <ion-row>
@@ -35,17 +38,19 @@
         </ion-row>
       </form>
     </span>
-    <span *ngIf="username" >
+    <span *ngIf="submited" >
       <ion-card>
         <ion-card-header>
-          Bonjour {{ username }} !
+          Bonjour {{ this.user.username }} !
         </ion-card-header>
 
         <ion-card-content>
           Regardez en dessous ce qui se passe en ce moment prêt de vous !
         </ion-card-content>
       </ion-card>
-      <button ion-button full [navPush]="page2" (click)="clicked($event)">Aller voir</button>
+
+      <button ion-button full [navPush]="page2" (click)="clicked()">Aller voir</button>
+      <button ion-button full (click)="disconnect()">Se déconnecter</button>
     </span>
   </ion-grid>
 </ion-content>
