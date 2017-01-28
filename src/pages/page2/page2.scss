@@ -6,12 +6,13 @@ page-page2 {
 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
-  width: 100px;
-  margin-right: 5px;
+  height: 150px;
+  width: 150px;
+  margin-right: 20px;
 }
 
 .card-content-md {
+  display: flex;
   padding: 0;
 }
 
@@ -21,12 +22,37 @@ page-page2 {
   padding: 0;
 }
 
-.content {
-  background-color: #EEE;
+.card-infos {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-details {
+
 }
 
-ion-card-content {
+.card-buttons{
   display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.card-buttons ion-icon {
+  display: inline-block;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card-buttons.text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content {
+  background-color: #EEE;
 }
 
 ion-card-title {
