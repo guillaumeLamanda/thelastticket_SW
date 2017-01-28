@@ -14,16 +14,10 @@
         <ion-col width-100>
           <ion-card ion-item *ngFor="let show of shows" (click)="itemTapped($event, item)">
             <ion-card-content>
-              <ion-row>
-                <ion-col width-50>
-                  <img src="img/show1.jpg"/>
-                </ion-col>
-                <ion-col width-50>
+                  <ion-img class="card-thumbnail"  [ngStyle]="{'background-image': 'url(' + show.Image + ')'}"></ion-img>
                   <ion-card-title>
                     {{show.Title}}
                   </ion-card-title>
-                </ion-col>
-              </ion-row>
             </ion-card-content>
           </ion-card>
         </ion-col>
