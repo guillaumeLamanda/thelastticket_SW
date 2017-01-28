@@ -12,7 +12,7 @@ export class Page3 {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
-  tickets: Array<{id: number, Categorie: string, Porte: string, Rang: string, Place: string}>;
+  tickets: Array<{id: number, Categorie: string, Porte: string, Rang: string, Place: string, Prix: number, FauxPrix: number}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -25,14 +25,18 @@ export class Page3 {
         Categorie: "Categorie or",
         Porte: "Porte Face A",
         Rang : "Rang AF",
-        Place : "Place 46"
+        Place : "Place 46",
+        Prix : 80,
+        FauxPrix : 230
       },
       {
         id: 2,
         Categorie: "Categorie 2",
         Porte: "Porte Face B",
         Rang : "Rang T",
-        Place : "Place 78"
+        Place : "Place 78",
+        Prix : 50,
+        FauxPrix : 599
       }
     ];
   }
