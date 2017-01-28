@@ -11,7 +11,7 @@ export class Page2 {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
-  shows: Array<{id: number, Author: string, Title: string, Date: string, Place: string, Image: string, Prix: number}>;
+  shows: Array<{id: number, Author: string, Title: string, Date: string, Place: string, Image: string, Price: number}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -25,8 +25,8 @@ export class Page2 {
         Title: "Concert Stromae",
         Date: "28 Janvier",
         Place: "Zenith, Paris",
-        Image: "img/show1.jpg",
-        Prix: 79.50
+        Image: "img/show5.jpg",
+        Price: 79.50
       },
       {
         id: 2,
@@ -35,7 +35,7 @@ export class Page2 {
         Date: "29 Janvier",
         Place: "Stade de France, Paris",
         Image: "img/show2.jpg",
-        Prix: 56
+        Price: 56
       },
       {
         id: 3,
@@ -44,7 +44,7 @@ export class Page2 {
         Date: "2 Février",
         Place: "Zenith, Paris",
         Image: "img/show3.jpg",
-        Prix: 110
+        Price: 110
       },
       {
         id: 4,
@@ -53,7 +53,7 @@ export class Page2 {
         Date: "29 janvier",
         Place: "Opéra de Paris",
         Image: "img/show4.jpg",
-        Prix: 46
+        Price: 46
       },
       {
         id: 5,
@@ -62,7 +62,7 @@ export class Page2 {
         Date: "28 janvier",
         Place: "Zenith, Paris",
         Image: "img/show1.jpg",
-        Prix: 86
+        Price: 86
       },
       {
         id: 6,
@@ -71,7 +71,7 @@ export class Page2 {
         Date: "29 janvier",
         Place: "Zenith, Paris",
         Image: "img/show2.jpg",
-        Prix: 22
+        Price: 22
       }
     ];
   }
