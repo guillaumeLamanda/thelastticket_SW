@@ -5,6 +5,7 @@ import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { Page3 } from '../pages/page3/page3';
 import { Profile } from '../pages/profile/profile';
+import { Sell } from '../pages/sell/sell';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     Page2,
     Page3,
     Profile,
+    Sell,
     TabsPage
   ],
   imports: [
@@ -26,6 +28,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     Page2,
     Page3,
     Profile,
+    Sell,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { Page2 } from '../page2/page2';
 import { Profile } from '../profile/profile';
-
+import { Sell } from '../sell/sell';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -11,4 +11,6 @@ import { Profile } from '../profile/profile';
 export class TabsPage {
   tab1root: any = Profile;
   tab2root: any = Page2;
+  tab3root: any = Sell;
+
 }
