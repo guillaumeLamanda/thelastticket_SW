@@ -23,7 +23,7 @@ export class Page2 {
         id: 1,
         Author: "Stromae",
         Title: "Concert Stromae",
-        Date: "28-01-2017",
+        Date: "28 janvier",
         Place: "Zenith, Paris",
         Image: "img/show1.jpg"
       },
@@ -31,7 +31,7 @@ export class Page2 {
         id: 2,
         Author: "U2",
         Title: "Concert U2",
-        Date: "29-01-2017",
+        Date: "29 janvier",
         Place: "Zenith, Paris",
         Image: "img/show2.jpg"
       }
