@@ -6,12 +6,14 @@ import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { Page3 } from '../pages/page3/page3';
 
+import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+  //rootPage = TabsPage;
 
   // Page 1 : authentification
   rootPage: any = Page1;
@@ -43,7 +45,7 @@ export class MyApp {
     if((window.localStorage.getItem('username') === "undefined" || window.localStorage.getItem('username') === null)) {
       this.rootPage = Page1;
     } else {
-      this.rootPage = Page2;
+      this.rootPage = TabsPage;
       console.log('user sdfdf finded : ' + window.localStorage.getItem('username'));
     }
   }
