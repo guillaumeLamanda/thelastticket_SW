@@ -10,6 +10,7 @@ export class Page2 {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
+  shows: Array<{id: number, Author: string, Title: string, Date: string, Place: string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -20,23 +21,11 @@ export class Page2 {
       {
         id: 1,
         Author: "Stromae",
-        Date: "",
-        Place: "Zenit, Paris"
+        Title: "Concert Stromae",
+        Date: "28-01-2017",
+        Place: "Zenith, Paris"
       }
     ];
-
-    // Let's populate this page with some filler content for funzies
-    this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-    'american-football', 'boat', 'bluetooth', 'build'];
-
-    this.items = [];
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
   }
 
   itemTapped(event, item) {

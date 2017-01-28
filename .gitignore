@@ -35,3 +35,8 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+platforms/
+plugins/
+www/build/main.js
+www/build/main.js.map
