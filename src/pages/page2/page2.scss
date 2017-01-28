@@ -12,7 +12,15 @@ page-page2 {
 .card-content-md {
   display: flex;
   padding: 0;
+  flex-direction: column;
 }
+
+@media only screen and (min-width: 480px) {
+  .card-content-md {
+    flex-direction: row;
+  }
+}
+
 
 .card {
   margin-top: 10px;
