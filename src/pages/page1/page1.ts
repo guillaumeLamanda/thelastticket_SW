@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 import { Page2 } from '../page2/page2';
+import { TabsPage } from '../tabs/tabs';
 // import { App } from '../../app/app.component';
 
 @Component({
@@ -37,6 +38,7 @@ export class Page1 {
     console.log(JSON.stringify(this.user));
     this.submited = 1;
     window.localStorage.setItem('username', this.username);
+    this.navCtrl.push(TabsPage);
   }
 
   clicked(event){

@@ -11,7 +11,7 @@
 
   <!--  List for Auth -->
   <ion-grid>
-    <span *ngIf="!submited">
+    <span>
       <form (ngSubmit)="login($form)">
         <ion-row>
           <ion-item>
@@ -39,54 +39,6 @@
           <button ion-button full>Login</button>
         </ion-row>
       </form>
-    </span>
-    <span *ngIf="submited" >
-      <ion-card>
-        <ion-item>
-          <ion-avatar item-left>
-            <img src="/img/user.jpg">
-          </ion-avatar>
-          <h2>{{ username }}</h2>
-        </ion-item>
-
-        <ion-list>
-          <button ion-item>
-            <ion-icon name="flame" item-left></ion-icon>
-            Voir les événements
-          </button>
-
-          <button ion-item>
-            <ion-icon name="apps" item-left></ion-icon>
-            Parcourir les catégories
-          </button>
-
-          <button ion-item  (click)="disconnect()">
-            <ion-icon name="log-out" item-left></ion-icon>
-            Se déconnecter
-          </button>
-
-
-
-          <!-- <button ion-item>
-            <ion-icon name="paw" item-left></ion-icon>
-            Dog Park
-          </button>
-
-          <button ion-item>
-            <ion-icon name="beer" item-left></ion-icon>
-            Pub
-          </button>
-
-          <button ion-item>
-            <ion-icon name="planet" item-left></ion-icon>
-            Space
-          </button> -->
-
-        </ion-list>
-      </ion-card>
-
-      <button ion-button full [navPush]="page2" (click)="clicked()">Aller voir</button>
-      <button ion-button full (click)="disconnect()">Se déconnecter</button>
     </span>
   </ion-grid>
 </ion-content>
