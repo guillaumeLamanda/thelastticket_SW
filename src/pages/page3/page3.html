@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Places concert</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-100>
+          <ion-card ion-item *ngFor="let ticket of tickets" >
+            <ion-card-content>
+              <ion-card-title>
+                {{ticket.Categorie}}
+              </ion-card-title>
+              <p class="porte">
+                {{ticket.Porte}}
+              </p>
+              <p class="rang">
+                {{ticket.Rang}}
+              </p>
+              <p class="place">
+                {{ticket.Place}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+</ion-content>
