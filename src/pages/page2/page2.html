@@ -28,39 +28,14 @@
                       {{show.Date}} - {{show.Time}}H
                     </p>
                   </div>
+                  <div class="card-price">
+                    <p>A partir de</p>
+                    <p class='price' >{{show.Price}}€</p>
+                  </div>
                 </div>
-              </ion-card-content>
-            </ion-card>
-          </span>
-          <ng-container *ngIf="categorie">
-            <div *ngFor="let show of shows" >
-                <ion-card  ion-item  *ngIf="show.Categorie === categorie" (click)="itemTapped($event, item)">
-                  <ion-card-content>
-                    <ion-img class="card-thumbnail"  [ngStyle]="{'background-image': 'url(' + show.Image + ')'}"></ion-img>
-                    <div class="card-infos">
-                      <ion-card-title>
-                        {{show.Title}}
-                      </ion-card-title>
-                      <div class="card-details">
-                        <div class="card-text-details">
-                          <p class="place">
-                            {{show.Place}}
-                          </p>
-                          <p class="date">
-                            {{show.Date}}
-                          </p>
-                        </div>
-                        <div class="card-price">
-                          <p>A partir de</p>
-                          <p class='price'>{{show.Price}}€</p>
-                        </div>
-                      </div>
-                    </div>
-                  </ion-card-content>
-                </ion-card>
               </div>
-          </ng-container>
-
+            </ion-card-content>
+          </ion-card>
         </ion-col>
       </ion-row>
     </ion-grid>
