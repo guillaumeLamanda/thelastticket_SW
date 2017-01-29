@@ -36,28 +36,25 @@
             </p>
           </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row class="ticket">
           <ion-col width-100>
-            <p class="ticket"> {{ticket.Porte}} - {{ticket.Rang}} - {{ticket.Place}} </p>
+            <p> {{ticket.Porte}} - {{ticket.Rang}} - {{ticket.Place}} </p>
           </ion-col >
         </ion-row>
         <ion-row>
-          <ion-col width-50>
+          <ion-col width-100>
             <ion-list>
               <ion-item>
-                <ion-label>Gaming</ion-label>
-                <ion-select [(ngModel)]="gaming">
-                  <ion-option value="nes">NES</ion-option>
-                  <ion-option value="n64">Nintendo64</ion-option>
-                  <ion-option value="ps">PlayStation</ion-option>
-                  <ion-option value="genesis">Sega Genesis</ion-option>
-                  <ion-option value="saturn">Sega Saturn</ion-option>
-                  <ion-option value="snes">SNES</ion-option>
+                <ion-label>Nombre de places</ion-label>
+                <ion-select [(ngModel)]="nbPlace">
+                  <ion-option value=1>1</ion-option>
+                  <ion-option value=2>2</ion-option>
+                  <ion-option value=3>3</ion-option>
+                  <ion-option value=4>4</ion-option>
+                  <ion-option value=5>5</ion-option>
                 </ion-select>
               </ion-item>
             </ion-list>
-          </ion-col>
-          <ion-col width-50>
           </ion-col>
         </ion-row>
 

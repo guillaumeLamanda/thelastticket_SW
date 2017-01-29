@@ -38,5 +38,4 @@ jspm_packages
 
 platforms/
 plugins/
-www/build/main.js
-www/build/main.js.map
+www/build/
