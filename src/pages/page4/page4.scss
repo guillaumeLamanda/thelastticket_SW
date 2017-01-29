@@ -19,6 +19,26 @@ page-page4 {
   border-radius: 50%;
 }
 
+.progressbar-container {
+  height: 2px;
+  width: 100%;
+  text-align: center;
+  background-color: #EEE;
+
+}
+
+.progressbar {
+  height: 100%;
+  width: 100%;
+  border-width: 0px;
+  background-color: red;
+}
+
+.time-left {
+  text-align: center;
+  color: grey;
+}
+
 .buy-card p {
   font-size: 1.3em;
   color: #e23e57;

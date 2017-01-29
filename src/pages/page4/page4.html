@@ -59,6 +59,11 @@
         </ion-row>
 
       </ion-grid>
+      <ion-datetime class="time-left" displayFormat="HH:mm:ss" [(ngModel)]="countdown"></ion-datetime>
+      <div class="progressbar-container">
+        <div class="progressbar" [style.width]="width">
+        </div>
+      </div>
     </ion-card-content>
 
   </ion-card>
