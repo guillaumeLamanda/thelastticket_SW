@@ -11,13 +11,14 @@ import { Page3 } from '../page3/page3';
   templateUrl: 'page4.html'
 })
 export class Page4 {
-  selectedItem: any;
+  show: any;
+  ticket: any;
   //tickets: Array<{id: number, Categorie: string, Porte: string, Rang: string, Place: string, Prix: number, FauxPrix: number}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
-    this.selectedItem = navParams.get('item');
-    this.selectedItem.shows
+    this.show = navParams.get('show');
+    this.ticket = navParams.get('ticket');
 
   }
 }

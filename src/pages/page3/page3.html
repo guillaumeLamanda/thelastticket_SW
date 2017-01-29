@@ -33,7 +33,7 @@
         <ion-grid>
           <ion-row>
             <ion-col width-100>
-              <ion-card ion-item *ngFor="let ticket of tickets" (click)="itemTapped($event, item)">
+              <ion-card ion-item *ngFor="let ticket of tickets" (click)="itemTapped($event, show, ticket)">
                 <ion-card-content>
                   <ion-card-title>
                     {{ticket.Categorie}}

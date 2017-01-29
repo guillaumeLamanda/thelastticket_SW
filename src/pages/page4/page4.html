@@ -8,18 +8,59 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-card class="buy-card">
 
     <ion-card-header>
-      <ion-img class="artist-thumbnail"  [ngStyle]="{'background-image': 'url(img/artist1.jpg)'}"></ion-img>
+      <div class="artist-thumbnail">
+        <ion-img  [ngStyle]="{'background-image': 'url(' + show.Author.Image + ')'}"></ion-img>
+      </div>
     </ion-card-header>
 
     <ion-card-content>
       <ion-grid>
         <ion-row>
-          <ion-col width-50></ion-col>
-          <ion-col width-50>This column will take 10% of space</ion-col>
+          <ion-col width-50 class="left">
+            <p class="name">
+              {{show.Author.Name}}
+            </p>
+            <p class="place">
+              {{show.Place}}
+            </p>
+          </ion-col >
+          <ion-col width-50 class="right">
+            <p>
+              {{show.Date}}
+            </p>
+            <p>
+              {{show.Time}}H
+            </p>
+          </ion-col>
         </ion-row>
+        <ion-row>
+          <ion-col width-100>
+            <p class="ticket"> {{ticket.Porte}} - {{ticket.Rang}} - {{ticket.Place}} </p>
+          </ion-col >
+        </ion-row>
+        <ion-row>
+          <ion-col width-50>
+            <ion-list>
+              <ion-item>
+                <ion-label>Gaming</ion-label>
+                <ion-select [(ngModel)]="gaming">
+                  <ion-option value="nes">NES</ion-option>
+                  <ion-option value="n64">Nintendo64</ion-option>
+                  <ion-option value="ps">PlayStation</ion-option>
+                  <ion-option value="genesis">Sega Genesis</ion-option>
+                  <ion-option value="saturn">Sega Saturn</ion-option>
+                  <ion-option value="snes">SNES</ion-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+          <ion-col width-50>
+          </ion-col>
+        </ion-row>
+
       </ion-grid>
     </ion-card-content>
 
