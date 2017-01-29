@@ -7,5 +7,53 @@
 </ion-header>
 
 <ion-content padding>
-     Profile page
+  <ion-card>
+
+    <ion-item>
+     <ion-avatar item-left>
+       <img src="img/user.jpg">
+     </ion-avatar>
+     <h2>{{prenom + ' ' + nom }}</h2>
+    </ion-item>
+
+    <ion-list>
+      <button ion-item (click)="openUserInfo()">
+        <ion-icon name="contact" item-left></ion-icon>
+        Mes infos
+      </button>
+
+      <button ion-item>
+        <ion-icon name="apps" item-left></ion-icon>
+        Vos catégories
+      </button>
+      <!--
+
+      <button ion-item>
+        <ion-icon name="cafe" item-left></ion-icon>
+        Cafe
+      </button>
+
+      <button ion-item>
+        <ion-icon name="paw" item-left></ion-icon>
+        Dog Park
+      </button>
+
+      <button ion-item>
+        <ion-icon name="beer" item-left></ion-icon>
+        Pub
+      </button> -->
+
+      <button ion-item  (click)="disconnect()">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Se déconnecter
+      </button>
+
+    </ion-list>
+
+  </ion-card>
+
+  <ion-card *ngIf="!nom || ! prenom">
+    <p>Vos informations sont incomplètes, renseigne les ! ;) </p>
+    <button ion-button block (click)="EditUserInfo()">Compléter</button>
+  </ion-card>
 </ion-content>
