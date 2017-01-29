@@ -11,8 +11,7 @@ export class Page2 {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
-  shows: Array<{id: number, Author: string, Title: string, Date: string, Place: string, Image: string, Price: number}>;
-
+  shows: Array<{id: number, Author: any, Title: string, Date: string, Place: string, Image: string, Price: number}>;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
@@ -21,7 +20,10 @@ export class Page2 {
     this.shows = [
       {
         id: 1,
-        Author: "Stromae",
+        Author: {
+          Name: "Stromae",
+          Image: "img/artist1.jpg"
+        },
         Title: "Concert Stromae",
         Date: "28 Janvier",
         Place: "Zenith, Paris",
@@ -30,7 +32,10 @@ export class Page2 {
       },
       {
         id: 2,
-        Author: "PSG",
+        Author: {
+          Name: "PSG",
+          Image: "img/artist1.jpg"
+        },
         Title: "Ligue 1 - PSG/Marseille",
         Date: "29 Janvier",
         Place: "Stade de France, Paris",
@@ -39,7 +44,10 @@ export class Page2 {
       },
       {
         id: 3,
-        Author: "U2",
+        Author: {
+          Name: "U2",
+          Image: "img/artist1.jpg"
+        },
         Title: "Concert U2",
         Date: "2 Février",
         Place: "Zenith, Paris",
@@ -48,7 +56,10 @@ export class Page2 {
       },
       {
         id: 4,
-        Author: "Opéra de Paris",
+        Author: {
+          Name: "Opéra de Paris",
+          Image: "img/artist1.jpg"
+        },
         Title: "Carmen",
         Date: "29 janvier",
         Place: "Opéra de Paris",
@@ -57,7 +68,10 @@ export class Page2 {
       },
       {
         id: 5,
-        Author: "Taylor Swift",
+        Author: {
+          Name: "Taylor Swift",
+          Image: "img/artist1.jpg"
+        },
         Title: "Concert Taylor Swift",
         Date: "28 janvier",
         Place: "Zenith, Paris",
@@ -66,7 +80,10 @@ export class Page2 {
       },
       {
         id: 6,
-        Author: "Gad Elmaleh",
+        Author: {
+          Name: "Gad Elmaleh",
+          Image: "img/artist1.jpg"
+        },
         Title: "Concert U2",
         Date: "29 janvier",
         Place: "Zenith, Paris",

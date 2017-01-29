@@ -39,6 +39,42 @@ export class Page3 {
         Place : "Place 78",
         Prix : 50,
         FauxPrix : 599
+      },
+      {
+        id: 3,
+        Categorie: "Categorie 1",
+        Porte: "Porte Face E",
+        Rang : "Rang BD",
+        Place : "Place 42",
+        Prix : 80,
+        FauxPrix : 230
+      },
+      {
+        id: 4,
+        Categorie: "Fosse",
+        Porte: "Porte Face D",
+        Rang : "Rang JL",
+        Place : "Place 23",
+        Prix : 50,
+        FauxPrix : 599
+      },
+      {
+        id: 5,
+        Categorie: "Categorie 3",
+        Porte: "Porte Face A",
+        Rang : "Rang AF",
+        Place : "Place 12",
+        Prix : 80,
+        FauxPrix : 230
+      },
+      {
+        id: 6,
+        Categorie: "Categorie 4",
+        Porte: "Porte Face B",
+        Rang : "Rang T",
+        Place : "Place 78",
+        Prix : 50,
+        FauxPrix : 599
       }
     ];
   }

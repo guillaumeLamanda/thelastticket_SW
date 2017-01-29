@@ -3,46 +3,67 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{show.Title}}</ion-title>
+    <ion-title>
+      {{show.Title}}
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <div class="info-concert">
     <ion-grid>
       <ion-row>
-        <ion-col width-100>
-          <ion-card ion-item *ngFor="let ticket of tickets" (click)="itemTapped($event, item)">
-            <ion-card-content>
-              <ion-card-title>
-                {{ticket.Categorie}}
-              </ion-card-title>
-              <div class="flex-container">
-              <div class="flex-item">
-                {{ticket.Porte}}
-              </div>
-              <div class="flex-item">
-                {{ticket.Rang}}
-              </div>
-              <div class="flex-item">
-                {{ticket.Place}}
-              </div>
-
-            </div>
-            <ion-item>
-
-            <button item-right ion-button color="danger">{{ticket.Prix}} €</button>
-
-            <p class="FauxPrix" item-right> {{ticket.FauxPrix}} </p>
-
-
-          </ion-item>
-            </ion-card-content>
-          </ion-card>
+        <ion-col class="info-repartitor" width-33>
+          <p class="place">
+            {{show.Place}}
+          </p>
+        </ion-col>
+        <ion-col class="info-repartitor" width-33>
+          <img class="artist-thumbnail" src="./{{show.Author.Image}}"/>
+        </ion-col>
+        <ion-col class="info-repartitor" width-33>
+          <p class="date">
+            {{show.Date}}
+          </p>
         </ion-col>
       </ion-row>
     </ion-grid>
-  </ion-list>
+      </div>
+      <ion-list>
+        <ion-grid>
+          <ion-row>
+            <ion-col width-100>
+              <ion-card ion-item *ngFor="let ticket of tickets" (click)="itemTapped($event, item)">
+                <ion-card-content>
+                  <ion-card-title>
+                    {{ticket.Categorie}}
+                  </ion-card-title>
+                  <div class="flex-container">
+                    <div class="flex-item">
+                      {{ticket.Porte}}
+                    </div>
+                    <div class="flex-item">
+                      {{ticket.Rang}}
+                    </div>
+                    <div class="flex-item">
+                      {{ticket.Place}}
+                    </div>
+
+                  </div>
+                  <ion-item>
+
+                    <button item-right ion-button color="danger">{{ticket.Prix}} €</button>
+
+                    <p class="FauxPrix" item-right> {{ticket.FauxPrix}} </p>
 
 
-</ion-content>
+                  </ion-item>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+
+
+    </ion-content>

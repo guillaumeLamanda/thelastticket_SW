@@ -1,6 +1,46 @@
-page-page3 {
+page-page3 .list {
+  padding-top: 60px;
+}
+
+ion-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+}
+
+ion-header {
+  z-index: 1;
+}
+
+.info-concert {
+  position: fixed;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+  background-color: #F53D3D;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 2px #BBB;
+}
+
+.info-repartitor {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.info-concert img{
+  height: 50px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.info-concert .date {
 
 }
+
 
 .card-content-md {
   display: flex;
