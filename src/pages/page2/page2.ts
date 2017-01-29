@@ -29,7 +29,7 @@ export class Page2 {
         Time: "20",
         Place: "Zenith, Paris",
         Image: "img/show5.jpg",
-        Price: 79.50
+        Price: 55
       },
       {
         id: 2,
@@ -42,7 +42,7 @@ export class Page2 {
         Time: "20",
         Place: "Stade de France, Paris",
         Image: "img/show2.jpg",
-        Price: 56
+        Price: 30
       },
       {
         id: 3,
@@ -55,7 +55,7 @@ export class Page2 {
         Time: "20",
         Place: "Zenith, Paris",
         Image: "img/show3.jpg",
-        Price: 110
+        Price: 100
       },
       {
         id: 4,
@@ -68,7 +68,7 @@ export class Page2 {
         Time: "20",
         Place: "Opéra de Paris",
         Image: "img/show4.jpg",
-        Price: 46
+        Price: 40
       },
       {
         id: 5,
@@ -81,7 +81,7 @@ export class Page2 {
         Time: "20",
         Place: "Zenith, Paris",
         Image: "img/show1.jpg",
-        Price: 86
+        Price: 100
       },
       {
         id: 6,
@@ -94,7 +94,7 @@ export class Page2 {
         Time: "20",
         Place: "Point Virgule, Paris",
         Image: "img/show6.jpg",
-        Price: 22
+        Price: 20
       }
     ];
   }
