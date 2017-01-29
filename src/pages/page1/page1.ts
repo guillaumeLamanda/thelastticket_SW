@@ -34,7 +34,6 @@ export class Page1 {
 
   // Log the user
   login(form) {
-    this.username = "franck@gmail.com";
     console.log(JSON.stringify(this.user));
     this.submited = 1;
     window.localStorage.setItem('username', this.username);

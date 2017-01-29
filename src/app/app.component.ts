@@ -7,6 +7,8 @@ import { Page2 } from '../pages/page2/page2';
 import { Page3 } from '../pages/page3/page3';
 import { Page4 } from '../pages/page4/page4';
 import { CategoriesPage } from '../pages/categories/categories';
+import { UserInfoPage } from '../pages/user-info/user-info';
+import { FormUserInfoPage } from '../pages/form-user-info/form-user-info';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -31,7 +33,9 @@ export class MyApp {
       { title: 'Evénements', component: Page2 },
       { title: 'PlaceConcert', component: Page3 },
       { title: 'Achat', component: Page4 },
-      { title: 'Categories', component: CategoriesPage}
+      { title: 'Categories', component: CategoriesPage},
+      { title: 'Vos informations', component: UserInfoPage},
+      { title: 'Editer vos informations', component: FormUserInfoPage}
     ];
 
   }
