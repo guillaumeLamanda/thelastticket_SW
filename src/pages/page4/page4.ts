@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
 
+import { Page3 } from '../page3/page3';
+
 
 
 @Component({
@@ -17,11 +19,4 @@ export class Page4 {
     this.selectedItem = navParams.get('item');
 
   }
-
-//  itemTapped(event, item) {
-    // That's right, we're pushing to ourselves!
-  //  this.navCtrl.push(Page2, {
-    //  item: item
-  //  });
-//  }
 }
