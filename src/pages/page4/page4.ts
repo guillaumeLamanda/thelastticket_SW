@@ -8,6 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class Page4 {
   show: any;
   ticket: any;
+  nbPlaces: number;
   //tickets: Array<{id: number, Categorie: string, Porte: string, Rang: string, Place: string, Prix: number, FauxPrix: number}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
