@@ -9,7 +9,7 @@ import { Page4 } from '../page4/page4';
 })
 export class Page3 {
   selectedItem: any;
-  icons: string[];
+  show: any;
   items: Array<{title: string, note: string, icon: string}>;
   tickets: Array<{id: number, Categorie: string, Porte: string, Rang: string, Place: string, Prix: number, FauxPrix: number}>;
 
@@ -18,6 +18,9 @@ export class Page3 {
     this.selectedItem = navParams.get('item');
 
     // populate sells
+    this.show = this.selectedItem;
+    console.log(this.show.Title);
+
     this.tickets = [
       {
         id: 1,

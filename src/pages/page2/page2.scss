@@ -8,16 +8,26 @@ page-page2 {
   background-position: center;
   min-height: 150px;
   min-width: 150px;
+  height: 150px;
+  width: 100%;
 }
 
-.card-content-md {
+.item-md.item-block .item-inner {
+  padding: 0;
+}
+
+.item-ios.item-block .item-inner {
+  padding: 0;
+}
+
+.card-content-md, .card-content-ios{
   display: flex;
   padding: 0;
   flex-direction: column;
 }
 
-@media only screen and (min-width: 480px) {
-  .card-content-md {
+@media only screen and (min-width: 768px) {
+  .card-content-md, .card-content-ios {
     flex-direction: row;
   }
 
