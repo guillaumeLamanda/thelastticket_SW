@@ -10,11 +10,13 @@ import { Page3 } from '../page3/page3';
 export class Page2 {
   selectedItem: any;
   icons: string[];
+  categorie: string;
   items: Array<{title: string, note: string, icon: string}>;
-  shows: Array<{id: number, Author: any, Title: string, Date: string, Time: string, Place: string, Image: string, Price: number}>;
+  shows: Array<{id: number, Author: any, Title: string, Date: string, Time: string, Place: string, Image: string, Price: number, Categorie: string}>;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
+    this.categorie = this.selectedItem;
 
     // populate sells
     this.shows = [
@@ -29,7 +31,8 @@ export class Page2 {
         Time: "20",
         Place: "Zenith, Paris",
         Image: "img/show5.jpg",
-        Price: 55
+        Price: 55,
+        Categorie: "Hip-Hop"
       },
       {
         id: 2,
@@ -42,7 +45,8 @@ export class Page2 {
         Time: "20",
         Place: "Stade de France, Paris",
         Image: "img/show2.jpg",
-        Price: 30
+        Price: 30,
+        Categorie: "Football"
       },
       {
         id: 3,
@@ -55,7 +59,8 @@ export class Page2 {
         Time: "20",
         Place: "Zenith, Paris",
         Image: "img/show3.jpg",
-        Price: 100
+        Price: 100,
+        Categorie: "Rock"
       },
       {
         id: 4,
@@ -68,7 +73,8 @@ export class Page2 {
         Time: "20",
         Place: "Opéra de Paris",
         Image: "img/show4.jpg",
-        Price: 40
+        Price: 40,
+        Categorie: "Metal"
       },
       {
         id: 5,
@@ -81,7 +87,8 @@ export class Page2 {
         Time: "20",
         Place: "Zenith, Paris",
         Image: "img/show1.jpg",
-        Price: 100
+        Price: 100,
+        Categorie: "Hip-Hop"
       },
       {
         id: 6,
@@ -94,7 +101,8 @@ export class Page2 {
         Time: "20",
         Place: "Point Virgule, Paris",
         Image: "img/show6.jpg",
-        Price: 20
+        Price: 20,
+        Categorie: "Comique"
       }
     ];
   }
@@ -102,6 +110,7 @@ export class Page2 {
   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(Page3, {
+      categorie: item,
       item: item
     });
   }
