@@ -13,6 +13,12 @@ ion-header {
   z-index: 1;
 }
 
+ion-card-title {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .info-concert {
   position: fixed;
   vertical-align: middle;
@@ -79,10 +85,8 @@ ion-header {
 .flex-container {
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
     width: 100px;
-    height: 100px;
+    height: 40px;
 }
 
 .FauxPrix {

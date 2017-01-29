@@ -24,7 +24,7 @@ export class Page3 {
     this.tickets = [
       {
         id: 1,
-        Categorie: "Categorie or",
+        Categorie: "CATEGORIE OR",
         Porte: "Porte Face A",
         Rang : "Rang AF",
         Place : "Place 46",
@@ -33,7 +33,7 @@ export class Page3 {
       },
       {
         id: 2,
-        Categorie: "Categorie 2",
+        Categorie: "CATEGORIE 2",
         Porte: "Porte Face B",
         Rang : "Rang T",
         Place : "Place 78",
@@ -42,7 +42,7 @@ export class Page3 {
       },
       {
         id: 3,
-        Categorie: "Categorie 1",
+        Categorie: "CATEGORIE 1",
         Porte: "Porte Face E",
         Rang : "Rang BD",
         Place : "Place 42",
@@ -51,7 +51,7 @@ export class Page3 {
       },
       {
         id: 4,
-        Categorie: "Fosse",
+        Categorie: "FOSSE",
         Porte: "Porte Face D",
         Rang : "Rang JL",
         Place : "Place 23",
@@ -60,7 +60,7 @@ export class Page3 {
       },
       {
         id: 5,
-        Categorie: "Categorie 3",
+        Categorie: "CATEGORIE 3",
         Porte: "Porte Face A",
         Rang : "Rang AF",
         Place : "Place 12",
@@ -69,7 +69,7 @@ export class Page3 {
       },
       {
         id: 6,
-        Categorie: "Categorie 4",
+        Categorie: "CATEGORIE 4",
         Porte: "Porte Face B",
         Rang : "Rang T",
         Place : "Place 78",
