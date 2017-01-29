@@ -40,3 +40,11 @@ platforms/
 plugins/
 www/build/main.js
 www/build/main.js.map
+
+#Ionic files to ignore
+node_modules/
+platforms/
+plugins/
+resources/
+www/lib
+www/build
