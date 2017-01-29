@@ -31,16 +31,6 @@ page-page2 {
     width: 150px;
   }
 
-  .card-price {
-    border-radius: 5px;
-    padding: 5px;
-    height: 3em;
-    background-color: rgba(255, 0, 0, 0.75);
-    text-align: center;
-    vertical-align: middle;
-    float: right;
-  }
-
 
   .card-infos {
     width: 100%;
@@ -55,7 +45,7 @@ page-page2 {
 }
 
 .card-infos {
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,7 +61,7 @@ page-page2 {
   border-radius: 5px;
   padding: 5px;
   height: 3em;
-  background-color: blue;//#E23E57;
+  background-color: #e23e57;
   text-align: center;
   vertical-align: middle;
   float: right;
