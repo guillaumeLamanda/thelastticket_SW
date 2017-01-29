@@ -3,26 +3,26 @@ import { Component, Pipe } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Page3 } from '../page3/page3';
 
-@Pipe({
-  name: 'CatPipe'
-})
-
-export class CatPipe {
-
-  // Transform is the new "return function(value, args)" in Angular 1.x
-  transform(value, args?) {
-    // ES6 array destructuring
-    let [cat] = args;
-    return value.filter(show => {
-      return show.categorie == cat;
-    });
-  }
-}
+// @Pipe({
+//   name: 'CatPipe'
+// })
+//
+// export class CatPipe {
+//
+//   // Transform is the new "return function(value, args)" in Angular 1.x
+//   transform(value, args?) {
+//     // ES6 array destructuring
+//     let [cat] = args;
+//     return value.filter(show => {
+//       return show.categorie == cat;
+//     });
+//   }
+// }
 
 @Component({
   selector: 'page-page2',
   templateUrl: 'page2.html',
-  pipes: [CatPipe]
+  // pipes: [CatPipe]
 })
 
 export class Page2 {
