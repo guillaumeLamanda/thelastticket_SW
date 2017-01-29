@@ -79,10 +79,11 @@ export class Page3 {
     ];
   }
 
-  itemTapped(event, item) {
+  itemTapped(event, show, ticket ) {
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(Page4, {
-      item: item
+      show: show,
+      ticket: ticket
     });
   }
 }

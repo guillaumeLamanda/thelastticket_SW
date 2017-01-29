@@ -34,7 +34,7 @@ export class Page2 {
         id: 2,
         Author: {
           Name: "PSG",
-          Image: "img/artist1.jpg"
+          Image: "img/artist2.png"
         },
         Title: "Ligue 1 - PSG/Marseille",
         Date: "29 Janvier",
@@ -46,7 +46,7 @@ export class Page2 {
         id: 3,
         Author: {
           Name: "U2",
-          Image: "img/artist1.jpg"
+          Image: "img/artist3.png"
         },
         Title: "Concert U2",
         Date: "2 Février",
@@ -58,7 +58,7 @@ export class Page2 {
         id: 4,
         Author: {
           Name: "Opéra de Paris",
-          Image: "img/artist1.jpg"
+          Image: "img/artist4.png"
         },
         Title: "Carmen",
         Date: "29 janvier",
@@ -70,7 +70,7 @@ export class Page2 {
         id: 5,
         Author: {
           Name: "Taylor Swift",
-          Image: "img/artist1.jpg"
+          Image: "img/artist5.jpg"
         },
         Title: "Concert Taylor Swift",
         Date: "28 janvier",
@@ -82,12 +82,12 @@ export class Page2 {
         id: 6,
         Author: {
           Name: "Gad Elmaleh",
-          Image: "img/artist1.jpg"
+          Image: "img/artist6.jpg"
         },
-        Title: "Concert U2",
+        Title: "Gad sur scène",
         Date: "29 janvier",
-        Place: "Zenith, Paris",
-        Image: "img/show2.jpg",
+        Place: "Point Virgule, Paris",
+        Image: "img/show6.jpg",
         Price: 22
       }
     ];
