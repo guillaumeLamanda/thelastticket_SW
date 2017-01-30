@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { NavController} from 'ionic-angular';
 
 import { Page1 } from '../page1/page1';
-import { UserInfoPage } from '../user-info/user-info';
+import { UserCategoriesPage } from '../user-categories/user-categories';
 import { FormUserInfoPage } from '../form-user-info/form-user-info';
 
 @Component({
@@ -38,6 +38,10 @@ export class Profile {
 
     openUserInfo(){
       this.nav.push(FormUserInfoPage);
+    }
+
+    openUserCategories(){
+      this.nav.push(UserCategoriesPage);
     }
 
     EditUserInfo(){

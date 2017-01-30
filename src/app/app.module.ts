@@ -11,6 +11,7 @@ import { Sell } from '../pages/sell/sell';
 import { TabsPage } from '../pages/tabs/tabs';
 import { UserInfoPage } from '../pages/user-info/user-info';
 import { FormUserInfoPage } from '../pages/form-user-info/form-user-info';
+import { UserCategoriesPage } from '../pages/user-categories/user-categories';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormUserInfoPage } from '../pages/form-user-info/form-user-info';
     Sell,
     TabsPage,
     UserInfoPage,
-    FormUserInfoPage
+    FormUserInfoPage,
+    UserCategoriesPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -41,7 +43,8 @@ import { FormUserInfoPage } from '../pages/form-user-info/form-user-info';
     Sell,
     TabsPage,
     UserInfoPage,
-    FormUserInfoPage
+    FormUserInfoPage,
+    UserCategoriesPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

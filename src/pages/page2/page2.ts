@@ -17,6 +17,7 @@ export class Page2 {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
     this.categorie = this.selectedItem;
+    // console.log(this.selectedItem);
 
     // populate sells
     this.shows = [

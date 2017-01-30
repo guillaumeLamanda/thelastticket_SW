@@ -19,7 +19,7 @@ export class Page3 {
 
     // populate sells
     this.show = this.selectedItem;
-    console.log(this.show.Title);
+    console.log(JSON.stringify(this.selectedItem));
 
     if(this.selectedItem.id == 1){
     this.tickets = [

@@ -21315,7 +21315,15 @@ page-page2 {
   min-width: 150px;
 }
 
-.card-content-md {
+.item-md.item-block .item-inner {
+  padding: 0;
+}
+
+.item-ios.item-block .item-inner {
+  padding: 0;
+}
+
+.card-content-md, .card-content-ios {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -21325,14 +21333,16 @@ page-page2 {
   flex-direction: column;
 }
 
-@media only screen and (min-width: 480px) {
-  .card-content-md {
+@media only screen and (min-width: 768px) {
+  .card-content-md, .card-content-ios {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    height: 150px;
+    width: 150px;
   }
   .card-infos {
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -21343,7 +21353,7 @@ page-page2 {
 }
 
 .card-infos {
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 0px 20px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -21371,9 +21381,10 @@ page-page2 {
   border-radius: 5px;
   padding: 5px;
   height: 3em;
-  background-color: rgba(255, 0, 0, 0.75);
+  background-color: #e23e57;
   text-align: center;
   vertical-align: middle;
+  float: right;
 }
 
 .card-price p {
@@ -21399,6 +21410,59 @@ ion-col {
 
 .label {
   margin: 0;
+}
+
+page-page3 .list {
+  padding-top: 60px;
+}
+
+ion-title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+ion-header {
+  z-index: 1;
+}
+
+ion-card-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.info-concert {
+  position: fixed;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+  background-color: #E23E57;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 2px #BBB;
+}
+
+.info-repartitor {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.info-concert img {
+  height: 50px;
+  width: auto;
+  border-radius: 100%;
 }
 
 .card-content-md {
@@ -21427,15 +21491,6 @@ ion-col {
   padding: 0;
 }
 
-.card-price {
-  border-radius: 5px;
-  padding: 5px;
-  height: 3em;
-  background-color: rgba(255, 0, 0, 0.75);
-  text-align: center;
-  vertical-align: middle;
-}
-
 .flex-item {
   width: 100px;
   height: 15px;
@@ -21446,11 +21501,8 @@ ion-col {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   width: 100px;
-  height: 100px;
+  height: 40px;
 }
 
 .FauxPrix {
@@ -21464,11 +21516,78 @@ ion-col {
   margin-top: 40px;
 }
 
+.buy-card {
+  padding: 20px;
+}
+
 .artist-thumbnail {
-  height: 200px;
-  width: 200px;
-  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.artist-thumbnail ion-img {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.progressbar-container {
+  height: 2px;
+  width: 100%;
+  text-align: center;
+  background-color: #EEE;
+}
+
+.progressbar {
+  height: 100%;
+  width: 100%;
+  border-width: 0px;
+  background-color: red;
+}
+
+.time-left {
+  text-align: center;
+  color: grey;
+}
+
+.buy-card p {
+  font-size: 1.3em;
+  color: #e23e57;
+}
+
+.ticket {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.left, .right {
+  margin-bottom: 10px;
+}
+
+.left p {
+  text-align: left;
+  color: #e23e57;
+}
+
+.right p {
+  text-align: right;
+}
+
+.left .name {
+  font-size: 1.7em;
+}
+
+.left .place {
+  font-size: 1.3em;
+}
+
+page-user-info ion-card.cards-list-demo ion-card-header {
+  color: #387ef5;
 }

@@ -9,6 +9,7 @@ import { Page4 } from '../pages/page4/page4';
 import { CategoriesPage } from '../pages/categories/categories';
 import { UserInfoPage } from '../pages/user-info/user-info';
 import { FormUserInfoPage } from '../pages/form-user-info/form-user-info';
+import {UserCategoriesPage } from '../pages/user-categories/user-categories';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -35,7 +36,8 @@ export class MyApp {
       { title: 'Achat', component: Page4 },
       { title: 'Categories', component: CategoriesPage},
       { title: 'Vos informations', component: UserInfoPage},
-      { title: 'Editer vos informations', component: FormUserInfoPage}
+      { title: 'Editer vos informations', component: FormUserInfoPage},
+      { title: 'Catégorie utilisateur', component: UserCategoriesPage }
     ];
 
   }
