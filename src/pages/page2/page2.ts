@@ -16,7 +16,7 @@ export class Page2 {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
-    this.categorie = this.selectedItem;
+    this.categorie = navParams.get('categorie');
     // console.log(this.selectedItem);
 
     // populate sells
@@ -109,9 +109,9 @@ export class Page2 {
   }
 
   itemTapped(event, item) {
+    console.log(item);
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(Page3, {
-      categorie: item,
       item: item
     });
   }
