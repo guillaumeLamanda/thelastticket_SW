@@ -36,6 +36,11 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-platforms/
-plugins/
-www/build/
+platforms/*
+plugins/*
+www/build/*
+.DS_Store
+/www/build/main.css
+main.css
+/www/build/main.js
+/www/build/main.js.map
