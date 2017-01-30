@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 import { Page2 } from '../page2/page2';
 
@@ -14,9 +15,15 @@ import { Page2 } from '../page2/page2';
   templateUrl: 'categories.html'
 })
 export class CategoriesPage {
-  categories = ["Rock", "Hip-Hop", "Electro", "Metal"];
+  categories: string[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, storage:Storage) {
+    storage.set('categories', ["Rock", "Hip-Hop", "Electro", "Metal"]);
+    storage.get('categories').then((categories) => {
+      console.log('categories : ' + categories);
+      this.categories = categories ;
+    })
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoriesPage');
