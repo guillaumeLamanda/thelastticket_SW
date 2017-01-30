@@ -23,10 +23,10 @@ export class CategoriesPage {
   }
 
   itemTapped(event, item) {
-    console.log('item : ' + item);
+    console.log('categorie select : ' + item);
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(Page2, {
-      item: item
+      categorie: item
     });
   }
 
